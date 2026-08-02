@@ -240,11 +240,6 @@ docker compose up --build
 #    Backend:   http://localhost:8000
 #    API Docs:  http://localhost:8000/docs
 
-# Stop containers
-docker compose down
-
-# Stop and wipe all data
-docker compose down -v
 ```
 
 **`docker-compose.yml` overview:**
