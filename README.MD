@@ -1,4 +1,4 @@
-# Campus VMS — Smart Campus Visitor Management System
+# Campus VMS — Smart Campus Visitor Management System (Build During a hackathon with in 3 hrs.)
 
 > **Tech Stack:** Next.js 14 | FastAPI | Docker | Gemini AI Risk Engine | Postgresql
 
