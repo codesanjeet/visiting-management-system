@@ -1,6 +1,6 @@
-# Campus VMS — Smart Campus Visitor Management System
+# Campus VMS — Smart Campus Visitor Management System (Build During a hackathon with in 3 hrs.)
 
-> **Tech Stack:** Next.js 14 · FastAPI · Docker · Gemini AI Risk Engine
+> **Tech Stack:** Next.js 14 | FastAPI | Docker | Gemini AI Risk Engine | Postgresql
 
 ---
 
@@ -240,11 +240,6 @@ docker compose up --build
 #    Backend:   http://localhost:8000
 #    API Docs:  http://localhost:8000/docs
 
-# Stop containers
-docker compose down
-
-# Stop and wipe all data
-docker compose down -v
 ```
 
 **`docker-compose.yml` overview:**
