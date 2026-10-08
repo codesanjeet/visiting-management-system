@@ -10,18 +10,19 @@ import asyncio
 load_dotenv()
 
 # Get the database URL from environment variables
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
-DB_HOST = os.getenv("DB_HOST")
-DB_PORT = os.getenv("DB_PORT", 5432) 
-DB_NAME = os.getenv("DB_NAME")
+# DB_USER = os.getenv("DB_USER")
+# DB_PASSWORD = os.getenv("DB_PASSWORD")
+# DB_HOST = os.getenv("DB_HOST")
+# DB_PORT = os.getenv("DB_PORT", 5432) 
+# DB_NAME = os.getenv("DB_NAME")
 
 
 # # Encode the password for the URL
-encoded_password = quote_plus(DB_PASSWORD)
+# encoded_password = quote_plus(DB_PASSWORD)
 
-DATABASE = f'postgresql+asyncpg://{DB_USER}:{encoded_password}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
-# DATABASE = "postgresql+asyncpg://cimage_hackathon_user:UoauGjXezYZFApSLFprOn24h2MPTieyj@dpg-d7ihlv9j2pic73arssg0-a.virginia-postgres.render.com/cimage_hackathon"
+# DATABASE = f'postgresql+asyncpg://{DB_USER}:{encoded_password}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+DATABASE = "postgresql+asyncpg://cimage_hackathon_user:UoauGjXezYZFApSLFprOn24h2MPTieyj@dpg-d7ihlv9j2pic73arssg0-a.virginia-postgres.render.com/cimage_hackathon"
+
 
 # Create an async engine and session
 engine = create_async_engine(DATABASE, echo=True)
